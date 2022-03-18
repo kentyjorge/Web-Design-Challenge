@@ -1,0 +1,40 @@
+h1 {
+    color: rgba(74,170,165,255);
+}
+
+.bggreen {
+    background-color: rgba(74,170,165,255);
+}
+
+.navbar-nav {
+    margin-right: 0px;
+    margin-left: auto;
+  }
+
+.navbar-brand {
+    padding: 10px;
+    margin-left: 10px;
+    width: 100%;
+  }
+
+.navbar {
+    padding: 10px;
+    width: 100%;
+}
+
+.container-fluid {
+    padding: 10px;
+}
+
+.visualizations {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+@media (max-wdith: 767px) {
+
+    .visualizations {
+        grid-template-columns: repeat(4,1fr);
+    }
+    
+}
