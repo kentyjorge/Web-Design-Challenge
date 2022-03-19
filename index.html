@@ -11,12 +11,80 @@
 </head>
 
 <body>
+  <!--navbar for each page-->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <div class="bggreen row">
+        <a class="navbar-brand" href='index.html' style="color: #000">Latitude</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Plots
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="cloudiness.html">clouiness</a></li>
+              <li><a class="dropdown-item" href="humidity.html">humidity</a></li>
+              <li><a class="dropdown-item" href="max_temperature.html">temps</a></li>
+              <li><a class="dropdown-item" href="wind_speed.html">wind</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons.html" tabindex="1" aria-disabled="true">Comparisons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="data.html" tabindex="1" aria-disabled="true">Data</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    
-
-
-
-
+  <!-- visual and description-->
+  <div class="container">
+    <div class="row">
+      <div class="row col-lg-8 col-md-8 col-sm-12">
+        <div class="container">
+          <h1 class="text-left">Latitude vs x</h1>
+          <img src="assets/images/Fig2.png" width=40%; ></img>
+          <p>The purpose of this project was to analyze how weather changes
+            as you get closer to the equator.  To accomplish this analysis, we pulled data
+            from OpenWeatherMap API to assemble a data set on over 500 cities.
+          </p>
+          <p>After assembling the dataset, we used matplotlib to plot various aspects
+            of the weather vs latitude.  Factors we looked at included: temperature, cloudiness,
+            wind speed, and humidity.
+          </p>
+        </div>
+      </div>
+      <!--images-->
+      <div class="col-lg-4 col-md-4 col-sm-12 ">
+        <div class="container">
+          <h1 class="text-center">Visualizations</h1>
+          <div class="container">
+            <div class="row visualizations">
+              <div class="col">
+                <a href="max_temperature.html"> <img src="assets/images/Fig1.png" class="img-fluid"> </img></a>
+              </div>
+              <div class="col">
+                <a href="humidity.html"> <img src="assets/images/Fig2.png" class="img-fluid"> </img></a>
+              </div>
+              <div class="col">
+                <a href="cloudiness.html"> <img src="assets/images/Fig3.png" class="img-fluid"> </img></a>
+              </div>
+              <div class="col">
+                <a href="wind_speed.html"> <img src="assets/images/Fig4.png" class="img-fluid"> </img></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>        
+  </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

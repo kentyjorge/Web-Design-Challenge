@@ -31,6 +31,19 @@ h1 {
     grid-template-columns: repeat(2,1fr);
 }
 
+table, th, td {
+    border: 1px solid;
+    text-align: center;
+  }
+
+.container {
+    padding: 10px;
+    margin-left: 10px;
+    width: 100%;
+  }
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
 @media (max-wdith: 767px) {
 
     .visualizations {
